@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react";
 export default function Number({ group, sTime, gotnumber }) {
   let style1 = {
-    fontSize: "500%",
+    fontSize: "200%",
     width: "25%",
-    border: "15px solid black",
+    border: "10px solid black",
     padding: "5%",
     margin: "1%",
     position: "absolute",
-    top: "20%",
-    right: "10%",
+    top: "55%",
+    left: "30%",
     textAlign: "center",
     borderRadius: "30px",
   };

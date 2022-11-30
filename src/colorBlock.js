@@ -21,21 +21,21 @@ export default function ColorBlock({ group, selected, sTime, setSTime }) {
 
   let style1 = {
     backgroundColor: group[time].color,
-    fontSize: "500%",
+    fontSize: "200%",
     width: "25%",
-    border: "15px solid black",
+    border: "10px solid black",
     padding: "5%",
     margin: "1%",
     position: "absolute",
     top: "20%",
-    left: "10%",
+    left: "30%",
     textAlign: "center",
     borderRadius: "30px",
   };
 
   let style2 = {
     backgroundColor: group[sTime].color,
-    fontSize: "500%",
+    fontSize: "200%",
     width: "25%",
     border: "15px solid black",
     padding: "5%",
