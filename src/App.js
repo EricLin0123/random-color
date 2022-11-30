@@ -25,6 +25,11 @@ function App() {
     setGotnumber(true);
   }
 
+  function restart() {
+    setSelected(false);
+    setGotnumber(false);
+  }
+
   return (
     <div className="App">
       <h1>抽獎</h1>
@@ -42,6 +47,10 @@ function App() {
 
       <button id="numberButton" onClick={getnumber}>
         {`Get number`}
+      </button>
+
+      <button onClick={restart} id="resetbutton">
+        reset
       </button>
     </div>
   );

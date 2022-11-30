@@ -64,3 +64,17 @@
   text-decoration: none;
   border-radius: 20px;
 }
+
+#resetbutton {
+  position: absolute;
+  font-size: 100%;
+  top: 90%;
+  left: 42%;
+  background-color: rgb(255, 0, 0);
+  border: none;
+  color: white;
+  padding: 2% 2%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
