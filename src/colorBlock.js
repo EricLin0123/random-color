@@ -21,11 +21,11 @@ export default function ColorBlock({ group, selected, sTime, setSTime }) {
 
   let style1 = {
     backgroundColor: group[time].color,
-    fontSize: "100px",
-    width: "300px",
+    fontSize: "500%",
+    width: "25%",
     border: "15px solid black",
-    padding: "50px",
-    margin: "20px",
+    padding: "5%",
+    margin: "1%",
     position: "absolute",
     top: "20%",
     left: "10%",
@@ -35,11 +35,11 @@ export default function ColorBlock({ group, selected, sTime, setSTime }) {
 
   let style2 = {
     backgroundColor: group[sTime].color,
-    fontSize: "100px",
-    width: "300px",
+    fontSize: "500%",
+    width: "25%",
     border: "15px solid black",
-    padding: "50px",
-    margin: "20px",
+    padding: "5%",
+    margin: "1%",
     position: "absolute",
     top: "20%",
     left: "10%",
