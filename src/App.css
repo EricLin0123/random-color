@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+#colorButton {
+  position: absolute;
+  font-size: 25px;
+  bottom: 10%;
+  left: 25%;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+#numberButton {
+  position: absolute;
+  font-size: 25px;
+  bottom: 10%;
+  right: 25%;
+  background-color: rgb(63, 63, 63);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+}

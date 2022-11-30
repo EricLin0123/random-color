@@ -1,23 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import { useEffect, useState } from "react";
+import ColorBlock from "./colorBlock";
+import Number from "./number";
 
 function App() {
+  const [group, setGroup] = useState([
+    { color: "red", maxNum: 99 },
+    { color: "yellow", maxNum: 70 },
+    { color: "blue", maxNum: 53 },
+    { color: "green", maxNum: 53 },
+    { color: "gold", maxNum: 13 },
+    { color: "silver", maxNum: 45 },
+  ]);
+  let [sTime, setSTime] = useState(0);
+  let [selected, setSelected] = useState(false);
+  let [gotnumber, setGotnumber] = useState(false);
+
+  function getcolor() {
+    setSelected(true);
+  }
+
+  function getnumber() {
+    setGotnumber(true);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>抽獎</h1>
+      <ColorBlock
+        group={group}
+        selected={selected}
+        sTime={sTime}
+        setSTime={setSTime}
+      />
+      <button id="colorButton" onClick={getcolor}>
+        Get color
+      </button>
+
+      <Number gotnumber={gotnumber} group={group} sTime={sTime} />
+
+      <button id="numberButton" onClick={getnumber}>
+        {`Get number`}
+      </button>
     </div>
   );
 }
