@@ -33,9 +33,7 @@ export default function ColorBlock({
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
-    position: "absolute",
-    top: "5%",
-    left: "8%",
+
     textAlign: "center",
     borderRadius: "30px",
     display: "flex",
@@ -51,9 +49,7 @@ export default function ColorBlock({
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
-    position: "absolute",
-    top: "5%",
-    left: "8%",
+
     textAlign: "center",
     borderRadius: "30px",
     display: "flex",

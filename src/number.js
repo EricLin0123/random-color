@@ -7,9 +7,7 @@ export default function Number({ group, sTime, gotnumber, getnumber }) {
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
-    position: "absolute",
-    bottom: "5%",
-    left: "8%",
+
     textAlign: "center",
     borderRadius: "30px",
     verticalAlign: "middle",

@@ -32,7 +32,15 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <ColorBlock
         className="colorBlock"
         group={group}
@@ -41,14 +49,6 @@ function App() {
         setSTime={setSTime}
         getcolor={getcolor}
       />
-
-      <Number
-        gotnumber={gotnumber}
-        group={group}
-        sTime={sTime}
-        getnumber={getnumber}
-      />
-
       <button
         onClick={restart}
         id="resetbutton"
@@ -60,6 +60,12 @@ function App() {
       >
         reset
       </button>
+      <Number
+        gotnumber={gotnumber}
+        group={group}
+        sTime={sTime}
+        getnumber={getnumber}
+      />
     </div>
   );
 }
