@@ -3,7 +3,7 @@ export default function Number({ group, sTime, gotnumber, getnumber }) {
   let style1 = {
     fontSize: "400%",
     width: "70%",
-    height: "180px",
+    height: "320px",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
