@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 export default function Number({ group, sTime, gotnumber, getnumber }) {
   let style1 = {
-    fontSize: "200%",
+    fontSize: "400%",
     width: "70%",
     height: "30%",
     border: "10px solid black",

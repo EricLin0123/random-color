@@ -49,7 +49,15 @@ function App() {
         getnumber={getnumber}
       />
 
-      <button onClick={restart} id="resetbutton">
+      <button
+        onClick={restart}
+        id="resetbutton"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         reset
       </button>
     </div>

@@ -27,7 +27,7 @@ export default function ColorBlock({
 
   let style1 = {
     backgroundColor: group[time].color,
-    fontSize: "200%",
+    fontSize: "400%",
     width: "70%",
     height: "30%",
     border: "10px solid black",
@@ -45,7 +45,7 @@ export default function ColorBlock({
 
   let style2 = {
     backgroundColor: group[sTime].color,
-    fontSize: "200%",
+    fontSize: "400%",
     width: "70%",
     height: "30%",
     border: "10px solid black",
