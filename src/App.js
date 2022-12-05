@@ -8,10 +8,11 @@ function App() {
   const [group, setGroup] = useState([
     { color: "red", maxNum: 99 },
     { color: "yellow", maxNum: 70 },
-    { color: "blue", maxNum: 53 },
+    { color: "purple", maxNum: 53 },
     { color: "green", maxNum: 53 },
-    { color: "gold", maxNum: 13 },
-    { color: "silver", maxNum: 45 },
+    { color: "pink", maxNum: 53 },
+    { color: "gold", maxNum: 193 },
+    { color: "silver", maxNum: 106 },
   ]);
   let [sTime, setSTime] = useState(0);
   let [selected, setSelected] = useState(false);
@@ -32,22 +33,21 @@ function App() {
 
   return (
     <div className="App">
-      <h1>抽獎</h1>
       <ColorBlock
+        className="colorBlock"
         group={group}
         selected={selected}
         sTime={sTime}
         setSTime={setSTime}
+        getcolor={getcolor}
       />
-      <button id="colorButton" onClick={getcolor}>
-        Get color
-      </button>
 
-      <Number gotnumber={gotnumber} group={group} sTime={sTime} />
-
-      <button id="numberButton" onClick={getnumber}>
-        {`Get number`}
-      </button>
+      <Number
+        gotnumber={gotnumber}
+        group={group}
+        sTime={sTime}
+        getnumber={getnumber}
+      />
 
       <button onClick={restart} id="resetbutton">
         reset

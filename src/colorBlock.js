@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-export default function ColorBlock({ group, selected, sTime, setSTime }) {
+export default function ColorBlock({
+  group,
+  selected,
+  sTime,
+  setSTime,
+  getcolor,
+}) {
   let [time, setTime] = useState(0);
   //let [sTime, setSTime] = useState(0);
 
@@ -22,34 +28,42 @@ export default function ColorBlock({ group, selected, sTime, setSTime }) {
   let style1 = {
     backgroundColor: group[time].color,
     fontSize: "200%",
-    width: "25%",
+    width: "70%",
+    height: "30%",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
     position: "absolute",
-    top: "20%",
-    left: "30%",
+    top: "5%",
+    left: "8%",
     textAlign: "center",
     borderRadius: "30px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
   let style2 = {
     backgroundColor: group[sTime].color,
     fontSize: "200%",
-    width: "25%",
+    width: "70%",
+    height: "30%",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
     position: "absolute",
-    top: "20%",
-    left: "30%",
+    top: "5%",
+    left: "8%",
     textAlign: "center",
     borderRadius: "30px",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
   };
 
   if (!selected) {
     return (
-      <div id="block" style={style1}>
+      <div id="block" style={style1} onClick={getcolor}>
         {group[time].color}
       </div>
     );

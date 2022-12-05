@@ -38,14 +38,15 @@
 }
 
 #colorButton {
-  position: absolute;
-  font-size: 100%;
-  top: 45%;
-  left: 37%;
+  font-size: 200%;
+  top: 5%;
+  left: 8%;
+  width: 70%;
+  height: 30%;
   background-color: rgb(63, 63, 63);
   border: none;
   color: white;
-  padding: 2% 2%;
+  padding: 5%;
   text-align: center;
   text-decoration: none;
   border-radius: 20px;
