@@ -6,6 +6,8 @@ export default function ColorBlock({
   setSTime,
   getcolor,
 }) {
+  var screenW = window.screen.width;
+  var screenH = window.screen.height;
   let [time, setTime] = useState(0);
   //let [sTime, setSTime] = useState(0);
 
@@ -28,8 +30,8 @@ export default function ColorBlock({
   let style1 = {
     backgroundColor: group[time].color,
     fontSize: "400%",
-    width: "70%",
-    height: "180px",
+    width: "80%",
+    height: "300px",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
@@ -43,8 +45,8 @@ export default function ColorBlock({
   let style2 = {
     backgroundColor: group[sTime].color,
     fontSize: "400%",
-    width: "70%",
-    height: "180px",
+    width: "80%",
+    height: "300px",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
