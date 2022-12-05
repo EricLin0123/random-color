@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 export default function Number({ group, sTime, gotnumber, getnumber }) {
   let style1 = {
-    fontSize: "400%",
+    fontSize: "1200%",
     width: "80%",
     height: "400px",
     border: "10px solid black",
     padding: "5%",
     margin: "1%",
-
     textAlign: "center",
     borderRadius: "30px",
     verticalAlign: "middle",
