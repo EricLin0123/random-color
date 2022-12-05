@@ -56,6 +56,7 @@ function App() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          fontSize: "300%",
         }}
       >
         reset
