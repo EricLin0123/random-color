@@ -5,13 +5,12 @@ import ColorBlock from "./colorBlock";
 import Number from "./number";
 
 function App() {
-  
   const [group, setGroup] = useState([
-    { color: "red", maxNum: 99 },
-    { color: "yellow", maxNum: 70 },
-    { color: "purple", maxNum: 53 },
-    { color: "green", maxNum: 53 },
-    { color: "pink", maxNum: 53 },
+    { color: "red", maxNum: 90 },
+    { color: "yellow", maxNum: 90 },
+    { color: "purple", maxNum: 90 },
+    { color: "green", maxNum: 90 },
+    { color: "pink", maxNum: 90 },
     { color: "gold", maxNum: 193 },
     { color: "silver", maxNum: 106 },
   ]);
@@ -22,7 +21,6 @@ function App() {
   function getcolor() {
     setSelected(true);
   }
-  
 
   function getnumber() {
     setGotnumber(true);
@@ -64,7 +62,7 @@ function App() {
         reset
       </button>
       <Number
-      selected={selected}
+        selected={selected}
         gotnumber={gotnumber}
         group={group}
         sTime={sTime}
