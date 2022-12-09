@@ -41,6 +41,7 @@ export default function ColorBlock({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    userSelect: "none",
   };
 
   let style2 = {
@@ -57,6 +58,7 @@ export default function ColorBlock({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    userSelect: "none",
   };
 
   if (!selected) {

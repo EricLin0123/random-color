@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
-export default function Number({ group, sTime, gotnumber, getnumber }) {
+export default function Number({
+  group,
+  sTime,
+  gotnumber,
+  getnumber,
+  selected,
+}) {
   let style1 = {
     fontSize: "1200%",
     width: "80%",
@@ -13,6 +19,7 @@ export default function Number({ group, sTime, gotnumber, getnumber }) {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
+    userSelect: "none",
   };
 
   function getRandomInt(max) {
